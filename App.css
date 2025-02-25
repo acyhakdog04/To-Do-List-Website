@@ -1,0 +1,128 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://wallpapershome.com/images/pages/ico_h/27166.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 50px; /* Adds space at the top */
+  margin: 0;
+}
+
+.container {
+  width: 600px; /* Increased width */
+  background: url('https://wallpaperaccess.com/full/169331.jpg') no-repeat center center fixed;
+  padding: 25px;
+  border-radius: 40px;
+  box-shadow: 0px 10px 30px rgba(49, 48, 48, 0.878);
+  text-align: center;
+  position: relative; /* Ensures proper positioning for children */
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #393844;
+  margin-bottom: 15px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  background: #f3f4f6;
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #4f46e5;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Fix for Three-Dot Menu Alignment */
+.menu-container {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Aligns to the right */
+}
+
+.menu-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.menu-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: rgb(218, 162, 162);
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.menu-dropdown button:hover {
+  background: #72ce80;
+}
